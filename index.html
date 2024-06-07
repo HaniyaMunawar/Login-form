@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif, arial;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: #081b29;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      input {
+        width: 350px;
+        height: 50px;
+        background: none;
+        outline: none;
+        border: none;
+        border: 2px solid #0ef;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding-left: 25px;
+        box-shadow: 0 0 15px #0ef;
+        font-weight: 400;
+      }
+
+      input::placeholder {
+        font-size: 17px;
+      }
+
+      button {
+        width: 150px;
+        height: 40px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border: 2.5px solid #0ef;
+        border-radius: 32px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 0 15px #0ef;
+      }
+
+      button:hover {
+        box-shadow: 0 0 25px #0ef, 0 0 50px #0ef, 0 0 100px #0ef;
+        background-color: #0ef;
+        transition: 0.5s;
+        color: #081b29;
+      }
+
+      h3 {
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 800px) {
+        input {
+          width: 280px;
+        }
+
+        button {
+          width: 120px;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Email: example@gmail.com <br />
+      Password: 123456
+    </h3>
+
+    <input type="email" name="" id="email" placeholder="Email" />
+    <br />
+    <br />
+    <input type="password" name="" id="password" placeholder="Password" />
+
+    <br />
+    <br />
+    <button id="btn">Login</button>
+
+    <script src="form.js"></script>
+  </body>
+</html>
